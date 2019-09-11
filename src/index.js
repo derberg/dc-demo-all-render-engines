@@ -10,7 +10,14 @@ import { odataRenderEngine } from "@kyma-project/dc-odata-render-engine";
 import { openApiRenderEngine } from "@kyma-project/dc-open-api-render-engine";
 import { GroupRenderer } from "./render/renderer.group";
 import { sources } from "./mocks/sources";
-import "swagger-ui-dist/swagger-ui.css";
+
+import "@kyma-project/dc-odata-render-engine/lib/styles.css";
+import "@kyma-project/dc-markdown-render-engine/lib/styles.css";
+import "@kyma-project/dc-open-api-render-engine/lib/styles.css";
+
+import "./styles.css";
+import "fiori-fundamentals/dist/fiori-fundamentals.css";
+import "fiori-fundamentals/dist/fonts.min.css";
 
 const SOURCES = sources;
 const RENDER_ENGINES = [
