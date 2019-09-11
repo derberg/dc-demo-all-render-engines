@@ -1,7 +1,7 @@
 import { asyncapiSpecMock } from "./asyncApiMock";
 import { openapiSpecMock } from "./openApiMock";
 import { odataSpecMock } from "./odataMock";
-import { markdownMock1, markdownMock2 } from "./markdownMocks";
+import { markdownMock } from "./markdownMocks";
 
 export const sources = [
   {
@@ -9,13 +9,7 @@ export const sources = [
       {
         source: {
           type: "markdown",
-          rawContent: markdownMock1
-        }
-      },
-      {
-        source: {
-          type: "markdown",
-          rawContent: markdownMock2
+          rawContent: markdownMock
         }
       },
       {
